@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的作品</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: #72b890;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            font: 14px Arial;
+            background-color: #fff2e3;
+            text-align: center;
+            color: #87968e;
+            margin: 8px;
+        }
+        .layout {
+            width: 800px;
+            margin: 0 auto;
+        }
+        .btn {
+            display: inline-block;
+            padding: 6px 14px;
+            color: #fff;
+            background-color: #72b890;
+            border-radius: 2px;
+            margin: 3px;
+            font-weight: normal;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .active {
+            opacity: 0.6;
+        }
+
+        .title {
+            font-size: 42px;
+            margin-top: 30px;
+        }
+
+        .description {
+            margin-top: 10px;
+            opacity: 0.6;
+        }
+        .tab-ct {
+            margin: 40px 0;
+        }
+        .tab-ct>li {
+            display: inline-block;
+        }
+        .work-img {
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+            margin-left: 200px;
+        }
+        .work-img img {
+            widows: 400px;
+            height: 300px;
+        }
+        .operate-ct {
+            margin-top: 30px;
+            margin-right: 40px;
+        }
+
+        .operate-ct>li {
+            display: inline-block;
+        }
+
+        .footer {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+    <h1 class="title">我的项目</h1>
+    <p class="description">一句话项目介绍</p>
+    <ul class="tab-ct">
+        <li><a class="btn active" href="#img-elephant">大象</a></li>
+        <li><a class="btn" href="#img-rabbit">兔子</a></li>
+        <li><a class="btn" href="#img-cat">猫咪</a></li>
+        <li><a class="btn" href="#img-dog">狗狗</a></li>
+        <li><a class="btn" href="#img-girl">女孩</a></li>
+    </ul>
+    <div class="work-img">
+    <img id="img-elephant" src="images/elephant.jpg" alt="大象">
+    <img id="img-rabbit" src="images/rabbit.jpg" alt="兔子">
+    <img id="img-cat" src="images/cat.jpg" alt="猫咪">
+    <img id="img-dog" src="images/dog.jpg" alt="狗">
+    <img id="img-girl" src="images/girl.jpg" alt="女孩">
+    </div>
+    <ul class="operate-ct">
+        <li><a class="btn" href="https://github.com/zhangxq2019/exercises/blob/master/7xiugai.html">查看源码</a></li>
+        <li><a class="btn" href="#">使用说明</a></li>
+    </ul>
+    <p class="footer">作者: <a href="">我</a></p>
+</div>
+</body>
+
+</html>
