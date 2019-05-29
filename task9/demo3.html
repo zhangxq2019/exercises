@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>浮动</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box1 box">1</div>
+            <p>float CSS属性指定一个元素应沿其容器的左侧或右侧放置，允许文本和内联元素环绕它。该元素从网页的正常流动(文档流)中移除，尽管仍然保持部分的流动性</p>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+        </div>
+        <style>
+        .container {
+            width: 280px;
+            height: 300px;
+            border: 1px solid;
+            margin: 100px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            float: left;
+            background-color: red;
+        }
+        p {
+            background-color: yellow;
+        }
+        .box1 {
+            height: 120px;
+            background-color: blue;
+        }
+        .box3 {
+            background-color: pink;
+        }
+        </style>
+    </body>
+</html>
