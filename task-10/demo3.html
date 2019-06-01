@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul,li,div {
+            margin: 0;
+            padding: 0;
+        }
+        .layout {
+            width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #666;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        ul {
+            list-style: none;
+        }
+        .container {
+            margin-left: -10px;
+        }
+        .container li {
+            float: left;
+            width: 260px;
+            margin-left: 10px; 
+            margin-top: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                        0 6px 20px 0 rgba(0, 0, 0, 0.2);
+        }
+        li>img {
+            width: 100%;
+            opacity: 0.75;
+        }
+       .container::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .text {
+            padding: 17px 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <h1>风景列表</h1>
+        <ul class="container">
+            <li>
+                <img src="http://cdn.jscode.me/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                <div class="text">风景如画</div>
+            </li>
+            <li>
+                <img src="http://cdn.jscode.me/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                <div class="text">风景如画</div>
+            </li>
+            <li>
+                <img src="http://cdn.jscode.me/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                <div class="text">风景如画</div>
+            </li>
+            <li>
+                <img src="http://cdn.jscode.me/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                <div class="text">风景如画</div>
+            </li>
+            <li>
+                <img src="http://cdn.jscode.me/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                <div class="text">风景如画</div>
+            </li>
+            <li>
+                <img src="http://cdn.jscode.me/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                <div class="text">风景如画</div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
