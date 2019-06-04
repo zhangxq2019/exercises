@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .bubble1,.bubble2,.bubble3 {
+        position: relative;
+        padding: 6px;
+        width: 50px;
+        height: 10px;
+        background: #fff;
+        border: 1px solid;
+        display: inline-block;
+    }
+    .bubble1:before {
+        content: '';
+        border-left: 6px solid transparent;
+        border-top: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #666;
+        display: inline-block;
+        position: absolute;
+        top: -12px;
+    }
+    .bubble2:before {
+        content: '';
+        border-left: 6px solid transparent;
+        border-top: 6px solid red;
+        border-right: 6px solid red;
+        border-bottom: 6px solid transparent;
+        display: inline-block;
+        position: absolute;
+       top: -1px;
+       left: 50px;
+    }
+    .bubble3::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-left: 1px solid #000;
+        border-top: 1px solid #000;
+        background: #fff;
+        transform: rotateZ(45deg);
+        display: inline-block;
+        position: absolute;
+        top: -7px;
+    }
+    </style>
+</head>
+<body>
+    <div class="bubble1"></div>
+    <div class="bubble2"></div>
+    <div class="bubble3"></div>
+</body>
+</html>
