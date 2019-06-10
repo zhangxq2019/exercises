@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body { 
+    height: 100%;
+}
+body {
+    font: 14px/1.5 Arial;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.layout {
+    width: 1200px;
+    margin: 0 auto;
+} 
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.button {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background: #3db0ff;
+    font-size: 26px;
+    color: #fff;
+}
+ a:hover {
+    opacity: 0.8;
+}
+/* navbar */
+header{
+    position: relative;
+    height: 100%;
+    background: #000;
+    opacity: 0.9;
+}
+header .logo {
+    float: left;
+    font-size: 70px;
+    font-style: italic;
+    color: transparent;
+    background-image: linear-gradient(#3db0ff,#2f609a);
+    -webkit-background-clip: text;
+} 
+header .nav {
+    float: right;
+}
+header .nav > li {
+    padding: 10px;
+    margin: 10px 0;
+    float: left;
+}
+header .nav a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+.nav a:hover {
+    background: #3db0ff;
+    border-radius: 4px;
+    color: #000;
+}
+header .intro {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+header .intro > span {
+    font-size: 32px;
+    font-style: bold;
+}
+header .intro > p {
+    margin: 20px 0;
+    font-size: 46px;
+}
+/* main */
+/* section */
+section {
+    height: 100%;
+    padding-top: 100px;
+    text-align: center;
+}
+section h1 {
+    font-size: 40px;
+}
+section ul {
+    margin-top: 40px;
+}
+section h2 {
+    font-size: 30px;
+}
+section .main-intro > p {
+    margin-top: 20px;
+    text-align: left;
+}
+section .main-intro > li {
+    float: left;
+    width: 33%;
+    margin: 20px 0;
+    padding: 60px 30px;
+}
+/*  */
+#family {
+    background: #f7f7f7;
+}
+section.family {
+    height: 100%;
+}
+section .family > li {
+    float: left;
+    width: 20%;
+    border: 1px solid #ccc;
+    margin: 10px 30px;
+}
+section .family > li img {
+    width: 200px;
+    height: 200px;
+}
+#family .layout > p {
+    text-align: center;
+}
+/* */
+section .timeline > li::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+section .timeline img,
+section .timeline .img {
+    display: inline-block;
+    text-align: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+}
+section .timeline .img:last-child {
+    padding-top: 50px;
+    background: rgb(233, 232, 232);
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+section .timeline > li:nth-child(odd) img {
+    float: right;
+}
+section .timeline > li:nth-child(even) img {
+    float: left;
+}
+section .timeline > li {
+    margin-top: 40px;
+    position: relative;
+}
+section .timeline > li:nth-child(odd) {
+    padding-right: calc(50% - 70px);
+    text-align: right;
+}
+section .timeline > li:nth-child(even) {
+    padding-left: calc(50% - 70px);
+    text-align: left;
+}
+section .timeline > li:nth-child(odd) dl {
+    padding-top: 20px;
+    margin-right: 160px;
+}
+section .timeline > li:nth-child(even) dl {
+    padding-top: 20px;
+    margin-right: 0;
+    margin-left: 160px;
+}
+section .timeline dd:nth-of-type(1) {
+    color: #666;
+}
+section .timeline > li::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 55px;
+    width: 4px;
+    background-color: #ccc;
+    left: 50%;
+    top: 140px;
+}
+section .timeline > li:last-child::before {
+    height: 0;
+}
+/*  */
+#advice {
+    background: url(images/aisi.jpg) no-repeat center center;
+}
+#advice h1 {
+    color: #000;
+}
+.left-text,.right-text {
+    width: 50%;
+    height: 300px;
+  }
+  .left-text {
+    float: left;
+  }
+  .right-text {
+    float: right;
+  }
+  section .left-text > input {
+    width: 90%;
+    height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  section .left-text > input:first-child {
+    margin-top:80px;
+  }
+  section .right-text > textarea {
+    width: 90%;
+    height: 190px;
+    margin-top:80px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+section .container .button {
+      margin-bottom: 155px;
+  }
+  /*  */
+footer div {
+    width: 33.33%;
+    float: left;
+    color: #666;
+    padding-left: 80px;
+}
+footer .ct {
+    margin-top: 30px;
+    width: 100%;
+}
+footer .icon {
+    margin-top: -20px;
+}
+footer .icon a {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+footer .icon li {
+    display: inline-block;
+}
+footer .blue li {
+    float: left;
+    padding-right: 10px;
+}
+footer .blue a {
+    color: #3db0ff;
+}
+footer .blue a:hover {
+    text-decoration: underline;
+}
