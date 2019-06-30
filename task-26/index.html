@@ -18,28 +18,29 @@
       <button id="btn-add-end">结尾添加</button>
       <script>
       var ct = document.querySelector('.ct');
-      var btnS = document.getElementById('btn-add-start');
-      var btnE = document.getElementById('btn-add-end');
+      var btn1 = document.getElementById('btn-add-start');
+      var btn2 = document.getElementById('btn-add-end');
       var ipt = document.querySelector('.ipt-add-content');
       ct.addEventListener('click', function(e){
           if(e.target.tagName.toLowerCase() === 'li'){
               console.log(e.target.innerText);
           }
       });
-      btnE.addEventListener('click', function(){
-          if(ipt.value) {
-              var li = document.createElement('li');
-              li.innerText = ipt.value;
-              ct.appendChild(li);
-          }
-      });
-      btnS.addEventListener('click', function(){
+      btn1.addEventListener('click', function(){
           if(ipt.value) {
               var li = document.createElement('li');
               li.innerText = ipt.value;
               ct.insertBefore(li,ct.firstChild);
           }
       });
+      btn2.addEventListener('click', function(){
+          if(ipt.value) {
+              var li = document.createElement('li');
+              li.innerText = ipt.value;
+              ct.appendChild(li);
+          }
+      });
+      
       </script>
 </body>
 </html>
