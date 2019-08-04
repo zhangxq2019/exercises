@@ -198,7 +198,7 @@ section .timeline > li:last-child::before {
 }
 /*  */
 #advice {
-    background: url(images/aisi.jpg) no-repeat center center;
+    background: url(../images/aisi.jpg) no-repeat center center;
 }
 #advice h1 {
     color: #000;
