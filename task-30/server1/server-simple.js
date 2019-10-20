@@ -1,7 +1,5 @@
-var http = require('http')
-var fs = require('fs')
-
-
+var http = require('http') //引入http模块
+var fs = require('fs') //读写
 var server = http.createServer(function(req, res){
   try{
     var fileContent = fs.readFileSync(__dirname + '/static' + req.url)
@@ -12,5 +10,5 @@ var server = http.createServer(function(req, res){
   res.end()
 })
 
-server.listen(8088)
-console.log('visit http://localhost:8088' )
+server.listen(8080)
+console.log('visit http://localhost:8080' )

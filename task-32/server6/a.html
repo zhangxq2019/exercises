@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .ct {
+            width: 910px;
+            margin: auto;
+        }
+
+        .main {
+            float: left;
+            width: 450px;
+            height: 300px;
+            border: 1px solid #ccc;
+        }
+
+        .main input {
+            margin: 20px;
+            width: 200px;
+        }
+
+        .iframe {
+            float: right;
+        }
+
+        iframe {
+            width: 450px;
+            height: 300px;
+            border: 1px dashed #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ct">
+        <h1>使用postMessage实现跨域</h1>
+        <div class="main">
+            <input type="text" placeholder="跨域成功">
+        </div>
+        <iframe src="http://localhost:8080/b.html" frameborder="0"></iframe>
+    </div>
+    <script>
+        document.querySelector('.main input').addEventListener('input', function () {
+            window.frames[0].postMessage('我是a.html,我要给你发消息了','*')
+        })
+        window.addEventListener('message', function (e) {
+            document.querySelector('.main input').value = e.data
+            console.log('a.html接收到的休息:',e.data)
+        })
+    </script>
+</body>
+
+</html>
